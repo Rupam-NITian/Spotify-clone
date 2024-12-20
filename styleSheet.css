@@ -1,0 +1,329 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main {
+    display: flex;
+    background-color: black;
+    /* background-color: #121212; */
+}
+
+.sidebar {
+    height: 100vh;
+    width: 350px;
+    color: white;
+    padding: 6px;
+    margin: 5px 0px 0px 0px;
+}
+
+.main-content {
+    height: 100vh;
+    /* background-color: #121212; */
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 10px 20px 0px 2px;
+}
+
+.music-player {
+    background-color: black;
+    color: white;
+    border-top: 3px solid rgba(128, 128, 128, 0.09);
+    justify-items: end;
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.sidebar ._nav  {
+    background-color: #121212;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.sidebar ._nav .nav-item {
+    padding: 15px;
+    /* opacity: 0.5; */
+    position: relative;
+}
+
+.sidebar ._nav .nav-item a {
+    opacity: 0.3;
+}
+
+.sidebar ._nav .nav-item:hover a {
+    opacity: 1;
+}
+
+.sidebar .nav2 {
+   height: 100vh;
+} 
+
+.sidebar ._nav .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.sidebar .nav2 .nav-item .icon2 {
+    position: absolute;
+    right: 15px;
+    margin-top: 7px;
+    opacity: 0.3;
+}
+.sidebar .nav2 .nav-item .icon1 {
+    position: absolute;
+    right: 40px;
+    margin-top: 7px;
+    opacity: 0.3;
+}
+.sidebar .nav2 .nav-item .icon2:hover {
+    opacity: 1;
+}
+.sidebar .nav2 .nav-item .icon1:hover {
+    opacity: 1;
+}
+
+.sidebar ._nav .nav-item .nav-item-item {
+    margin-top: 20px;
+    background-color: rgba(86, 84, 84, 0.150);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content ._nav {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #121212;
+    z-index: 10;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px black;
+    border-bottom-left-radius: 10px;
+}
+.main-content ._nav .icon2{
+    position: absolute;
+    right:100px;
+}
+.main-content ._nav .icon3{
+    position: absolute;
+    right:20px;
+}
+.main-content ._nav .icon4{
+    position: absolute;
+    right:250px;
+}
+.main-content h3 {
+    margin: 20px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .main-content .card1 {
+    height: 22rem;
+    width: 15rem;
+    padding: 0.5rem;
+    background-color: rgba(86, 84, 84, 0.100);
+    color: white; */
+    /* position: relative; */
+    /* top: 15px;
+    left: 30px;
+    margin: 10px;
+} */
+/* .main-content .card {
+    height: 22rem;
+    width: 15rem;
+    padding: 0.5rem;
+    background-color: rgba(86, 84, 84, 0.100);
+    color: white;
+    top: 15px;
+    /* left: 30px; */
+    /* margin: 10px;
+}  */
+.main-content .songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.excard {
+    height: 22rem;
+    width:15rem;
+    background-color: blueviolet;
+    padding: 1rem;
+    background-color: rgba(86, 84, 84, 0.100);
+    border-radius: 0.625rem;
+    left: 1rem;
+    margin-left: 1rem;
+}
+
+.excard h4 {
+    margin:8px 0 5px 2px;
+}
+.excard p {
+    margin:8px 0 5px 2px;
+}
+.excard img {
+    height: 13rem;
+    width:13rem;
+} 
+
+.recently_played .excard {
+    margin-left: 2rem;
+}
+.songs .excard {
+    margin-bottom: 1rem;
+}
+
+.music-player .player_icon1 {
+    height: 15px;
+    width: 15px;
+    margin: 16px;
+    opacity: 0.2;
+}
+.music-player .player_icon1:hover {
+    opacity: 1;
+}
+
+.music-player .player_icon3 {
+    height: 40px;
+    width:40px;
+}
+
+.main-content .artists {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-right: 1rem;
+}
+.main-content .artists .artistsCard {
+    width: 10rem;
+    height: 15.5rem;
+    /* background-color: red; */
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    position: relative;
+    left: 20px;
+    /* margin: 0 0.8rem 0.8rem 0; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-content .artists .artistsCard .name{
+    /* font-size: 0.3rem; */
+    font-weight: 600;
+    /* text-align: center; */
+    margin-top: 1rem;
+}
+.main-content .artists .artistsCard .playButton {
+    position:absolute;
+    height: 3rem;
+    width: 3rem;
+    z-index: 1;
+    background-color: rgb(38, 229, 38);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 6.5rem;
+    right: 1rem;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.main-content .artists .artistsCard .playButton i {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.main-content .artists .artistsCard .title{
+    /* text-align: center; */
+    margin-top: 0,5rem;
+    opacity: 0.8;
+}
+
+.main-content .artists .artistsCard img {
+    height: 9rem;
+    width: 9em;
+    border-radius: 50%;
+}
+
+.main-content .artists .artistsCard:hover {
+    background-color: rgba(86, 84, 84, 0.200);
+}
+
+.main-content .artists .artistsCard:hover .playButton {
+    opacity: 1;
+}
+
+.main-content .albums .albumsCard {
+    width: 11rem;
+    height: 17rem;
+    /* background-color: red; */
+    padding: 0.5rem 1rem 1rem 1rem;
+    position: relative;
+    left: 20px;
+    /* margin: 0 0.8rem 0.8rem 0; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-content .albums .albumsCard img{
+    height:10rem;
+    width: 9rem;
+    border-radius: 10px;
+}
+
+.main-content .albums .albumsCard .name {
+    font-weight: 700;
+    /* text-align: center; */
+    margin-top: 1rem;
+}
+
+.main-content .albums .albumsCard .singer {
+   font-size: 0.8rem;
+}
+
+.main-content .albums .albumsCard .playButton {
+    position:absolute;
+    height: 3rem;
+    width: 3rem;
+    z-index: 1;
+    background-color: rgb(38, 229, 38);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7rem;
+    right: 1rem;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.main-content .albums .albumsCard .playButton i {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.main-content .albums .albumsCard:hover {
+    background-color: rgba(86, 84, 84, 0.200);
+}
+
+.main-content .albums .albumsCard:hover .playButton {
+    opacity: 1;
+}
+
+.main-content .albums {
+    display: flex;
+    flex-wrap: wrap;
+}
